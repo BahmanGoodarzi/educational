@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog</title>
+        <meta name="viewport" content="with=divice-with, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    </head>
+    <body>
+        <!--HEAD-->
+        <section class="sub-header">
+            <nav>
+                <div class="l-d">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <div class="links" id="navlinks">
+                    <i class="fa fa-times" onclick="hiddemenu()"></i>
+                    <ul>
+                        <li><a href="home.html" target="blank">Home</a></li>
+                        <li><a href="aboute.html" target="blank">About</a></li>
+                        <li><a href="courses.html">Course</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online<br> Programs For 2021</h1>
+        </section>
+
+
+        <!--blog-->
+
+        <section class="blog">
+            <div class="blog-row">
+                <div class="blog-colleft">
+                    <img src="./image/s (31).jpg">
+                    <h2>Our Certificate & Online<br> Programs For 2021</h2>
+                    <p>The oldest classical Greek and Latin writing had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized, and word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphs,</p><br>
+                    <p>In ancient manuscripts, another mean to divide sentences into paragraphs was a line break (newline) followed by an initial at the beginning of the next paragraph. An initial is an oversized capital letter, sometimes outdented</p><br>
+                    <p>A second common modern English style is to use no indenting, but add vertical white space to create "block paragraphs." On a typewriter, a double carriage return produces a blank line for this purpose; professional typesetters (or word processing software) may put in an arbitrary vertical space by adjusting leading. This style is very common in electronic formats, such as on the World Wide Web and email. Wikipedia itself employs this format.a hedera leaf or other symbol can be added to the inter-paragraph white space, or put in the indentation space.</p><br>
+
+
+                    <div class="comment-box">
+                        <h3>Leave A Comment</h3>
+                        <form class="commentf">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Yuor Comment"></textarea>
+                            <button type="submit" class="btn-home btn-color">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="blog-colright">
+                    <h3>Post Categoris</h3>
+                    <div>
+                        <p>Business Analytics</p>
+                        <p>21</p>
+                    </div>
+                    <div>
+                        <p>Data Science</p>
+                        <p>28</p>
+                    </div>
+                    <div>
+                        <p>Machine Lerning</p>
+                        <p>14</p>
+                    </div>
+                    <div>
+                        <p>Computer Science</p>
+                        <p>18</p>
+                    </div>
+                    <div>
+                        <p>Auto Cat</p>
+                        <p>30</p>
+                    </div>
+                    <div>
+                        <p>Computer Lisens</p>
+                        <p>25</p>
+                    </div>
+
+                    <img src="./image/s (26).jpg">
+                    <p>A second common modern English style is to use no indenting, but add vertical white space to create "block paragraphs." On a typewriter, a double carriage return produces</p>
+                </div>
+            </div>
+        </section>
+
+
+          <!--footer-->
+
+        <section class="footer">
+            <h4>Aboute Us</h4>
+            <p>There are also two sides to the spectrum of FIRE. Lean FIRE refers to the ability to retire early on a smaller accumulation of retirement income. <br> a frugal lifestyle during retirement. On the other end of this is Fat FIRE, which refers to the ability to retire early due to a large amount of accumulated wealth.<br> A hybrid of these two is known as Barista FIRE, which refers to a semi-retired lifestyle of working part-time for some supplemental income.</p>
+
+            <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-envelope-open"></i>
+                <i class="fa fa-microchip"></i>
+                <i class="fa fa-address-book"></i>
+                <i class="fa fa-exclamation-triangle"></i>
+                <p>Mode With<i class="fa fa-heart"></i>By Easy Tutares Code</p>
+            </div>
+
+            
+        </section>
+
+
+        <!--SCRIPT-->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right ="0";
+            }
+            function hiddemenu(){
+                navlinks.style.right ="-100px";
+            }
+        </script>
+                <script src="./index.js"></script>
+    </body>
+</html>

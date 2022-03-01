@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>about</title>
+        <meta name="viewport" content="with=divice-with, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    </head>
+    <body>
+        <!--HEAD-->
+        <section class="sub-header">
+            <nav>
+                <div class="l-d">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <div class="links" id="navlinks">
+                    <i class="fa fa-times" onclick="hiddemenu()"></i>
+                    <ul>
+                        <li><a href="home.html" target="blank">Home</a></li>
+                        <li><a href="aboute.html" target="blank">About</a></li>
+                        <li><a href="courses.html">Course</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!--about us-->
+
+        <section class="about">
+            <div class="about-row">
+                <div class="about-col">
+                    <h1>We Are The World's Largest<br> Univercity</h1>
+                    <p>A city is a large human settlement.[1][2][a] It can be defined as a permanent and densely settled place with administratively defined boundaries whose members work primarily on non-agricultural tasks.[3] Cities generally have extensive systems. Fier (Albanian: [ˈfiˈɛɾ]; definite Albanian form: Fieri) is the seventh most populous city of the Republic of Albania and seat of Fier County and Fier Municipality. It is situated on the bank of Gjanica River in the Myzeqe Plain between.</p>
+                    <a href="" class="btn-home btn-color">EXPLOR NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="./image/s (22).jpg">
+                </div>
+            </div>
+
+        </section>
+
+
+                <!--footer-->
+
+        <section class="footer">
+            <h4>Aboute Us</h4>
+            <p>There are also two sides to the spectrum of FIRE. Lean FIRE refers to the ability to retire early on a smaller accumulation of retirement income. <br> a frugal lifestyle during retirement. On the other end of this is Fat FIRE, which refers to the ability to retire early due to a large amount of accumulated wealth.<br> A hybrid of these two is known as Barista FIRE, which refers to a semi-retired lifestyle of working part-time for some supplemental income.</p>
+
+            <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-envelope-open"></i>
+                <i class="fa fa-microchip"></i>
+                <i class="fa fa-address-book"></i>
+                <i class="fa fa-exclamation-triangle"></i>
+                <p>Mode With<i class="fa fa-heart"></i>By Easy Tutares Code</p>
+            </div>
+
+            
+        </section>
+
+
+        <!--SCRIPT-->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right ="0";
+            }
+            function hiddemenu(){
+                navlinks.style.right ="-100px";
+            }
+        </script>
+                <script src="./index.js"></script>
+    </body>
+</html>
