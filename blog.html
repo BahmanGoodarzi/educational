@@ -86,7 +86,22 @@
                     </div>
 
                     <img src="./image/s (26).jpg">
-                    <p>A second common modern English style is to use no indenting, but add vertical white space to create "block paragraphs." On a typewriter, a double carriage return produces</p>
+                    <small>A second common modern English style is to use no indenting, but add vertical white space to create "block paragraphs." On a typewriter, a double carriage return produces</small>
+
+                    <div class="valed">
+                        <section class="center">
+                        <button id="open" class="btn-home btn-color">chlick me pleas</button>
+                        </section>
+
+                        <div class="modal-contaner" id="modal_contaner">
+                            <div class="modal">
+                                <h2>Modala Are</h2>
+                                <p>learn js with bimi in tatoril some thing is very good hapening in this year of 2022 too company jone the our web site and hope to fast finish this course</p>
+                                <button id="close" class="btn-home btn-color">close</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -120,6 +135,18 @@
             function hiddemenu(){
                 navlinks.style.right ="-100px";
             }
+
+            const open = document.getElementById("open");
+            const close = document.getElementById("close");
+            const modal_contaner = document.getElementById("modal_contaner");
+
+            open.addEventListener("click" ,()=>{
+                modal_contaner.classList.add("show");
+            })
+
+            close.addEventListener("click" , ()=>{
+                modal_contaner.classList.remove("show")
+            })
         </script>
                 <script src="./index.js"></script>
     </body>

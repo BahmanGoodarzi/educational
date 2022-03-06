@@ -46,7 +46,7 @@ body.dark h3 {
 .l-d label {
   width: 56px;
   height: 28px;
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(90, 90, 90);
   border-radius: 50px;
   padding: 5px;
   display: flex;
@@ -103,27 +103,22 @@ nav .links ul li {
 }
 
 nav .links ul li a {
-  color: blanchedalmond;
-  font-size: 15px;
+  color: rgb(255, 254, 254);
+  font-size: 19px;
   font-family: "Ubuntu", sans-serif;
-}
-nav a img {
-  width: 60px;
-  transition: 0.8s;
-}
-
-nav a img:hover {
-  transform: rotate(360deg);
+  font-weight: bold;
 }
 
 nav .links ul li::after {
   content: "";
   width: 0%;
-  height: 2px;
-  background-color: rgb(204, 95, 110);
+  height: 4px;
+  background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
   display: block;
   margin: auto;
-  transition: 1s linear;
+  transition: 0.5s linear;
+  border-radius: 50px;
 }
 
 nav .links ul li:hover::after {
@@ -153,11 +148,13 @@ nav .links ul li:hover::after {
 
 .btn-home {
   display: inline-block;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
   color: rgb(255, 255, 255);
   font-size: 15px;
   border: 2px solid rgb(255, 255, 255);
-  padding: 10px 30px;
-  border-radius: 3px;
+  padding: 8px 30px;
+  border-radius: 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
@@ -166,8 +163,12 @@ nav .links ul li:hover::after {
 }
 
 .btn-home:hover {
-  border: 2px solid rgb(253, 85, 85);
-  background: rgb(253, 85, 85);
+  border: 2px solid rgb(85, 96, 253);
+  background: rgb(85, 96, 253);
+}
+
+.btn-home:active {
+  transform: scale(0.98);
 }
 
 nav .fa {
@@ -491,7 +492,7 @@ nav .fa {
 
 .connect {
   width: 80%;
-  margin: 60px auto;
+  margin: 20px auto;
   text-align: center;
   background-image: linear-gradient(
       0deg,
@@ -511,9 +512,51 @@ nav .fa {
   color: rgb(255, 255, 255);
 }
 
+.levele {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.levele h3 {
+  margin-bottom: 10px;
+}
+
+.levele .score {
+  width: 380px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(201, 200, 200);
+  margin-bottom: 50px;
+}
+
+.levele .score .score-lev {
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  opacity: 0;
+  transition: 1s;
+}
+
 @media (max-width: 700px) {
   .connect h3 {
     font-size: 23px;
+  }
+  .levele .score {
+    width: 250px;
+    height: 23px;
+  }
+  .levele .score .score-lev {
+    height: 23px;
   }
 }
 
@@ -603,16 +646,6 @@ nav .fa {
   margin-bottom: 10px;
 }
 
-.btn-color {
-  border: 2px solid rgb(248, 101, 101);
-  color: rgb(248, 101, 101);
-}
-
-.btn-color:hover {
-  color: white;
-  background-color: tomato;
-}
-
 @media (max-width: 700px) {
   .about .about-row {
     flex-direction: column;
@@ -636,7 +669,7 @@ nav .fa {
 /*blog*/
 
 .blog {
-  width: 80%;
+  width: 83%;
   margin: auto;
   padding: 60px 0px;
 }
@@ -647,7 +680,7 @@ nav .fa {
 }
 
 .blog .blog-row .blog-colleft {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 .blog .blog-row .blog-colleft h2 {
@@ -664,7 +697,7 @@ nav .fa {
 }
 
 .blog .blog-row .blog-colright {
-  flex-basis: 35%;
+  flex-basis: 37%;
 }
 
 .blog .blog-row .blog-colright img {
@@ -687,6 +720,66 @@ nav .fa {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
+}
+
+.blog .blog-row .blog-colright small {
+  font-size: 16px;
+  display: block;
+}
+
+.blog .blog-row .blog-colright .valed {
+  position: relative;
+}
+
+.blog .blog-row .blog-colright .center button {
+  margin-top: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.blog .blog-row .blog-colright .modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.blog .blog-row .blog-colright .modal-contaner {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.blog .blog-row .blog-colright .modal-contaner.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.4s;
+}
+
+.blog .blog-row .blog-colright .modal-contaner .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog .blog-row .blog-colright .modal-contaner .modal button {
+  margin-top: 20px;
+}
+
+.blog .blog-row .blog-colright .modal-contaner .modal h2 {
+  margin: 10px 0;
+}
+
+.blog .blog-row .blog-colright .modal-contaner .modal p {
+  font-size: 15px;
+  opacity: 0.7;
+  padding: 0 15px;
 }
 
 .comment-box {
@@ -715,6 +808,9 @@ nav .fa {
   }
   .sub-header h1 {
     font-size: 25px;
+  }
+  .blog .blog-row .blog-colright .center button {
+    margin-bottom: 150px;
   }
 }
 
